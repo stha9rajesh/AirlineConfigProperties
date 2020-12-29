@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AirlineConfigProperties.iml" filepath="$PROJECT_DIR$/.idea/AirlineConfigProperties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SejarProperties.iml" filepath="$PROJECT_DIR$/.idea/SejarProperties.iml" />
     </modules>
   </component>
 </project>
