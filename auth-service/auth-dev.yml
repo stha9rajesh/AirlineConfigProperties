@@ -1,0 +1,32 @@
+
+
+server:
+  port: 1992
+spring:
+  datasource:
+    #  use this url for localhost
+    #use docker container name instead 'localhost'
+    #  url: jdbc:mysql://localhost:3306/authorizationDb?createDatabaseIfNotExist=true
+    url: ${MYSQL_HOST:jdbc:mysql://localhost:3306/eagleeye_authDb?createDatabaseIfNotExist=true}
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat:
+      test-on-borrow: true
+      validation-query: SELECT 1
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
