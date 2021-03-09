@@ -1,12 +1,14 @@
 
 server:
   port: 8080
-zuul:
-  ignored-services: '*'
-  prefix: /api
-  routes:
-    organizationservice: /organization/**
-    licenseservice: /license/**
+# zuul:
+#   ignored-services: '*'
+#   prefix: /api
+#   routes:
+#     organizationservice: /organization/**
+#     licenseservice: /license/**
+#     userservice: /user/**
+#     vehicleservice:
 
 eureka:
   client:
