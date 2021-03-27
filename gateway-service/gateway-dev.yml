@@ -19,4 +19,4 @@ eureka:
     instance-id: ${eureka.instance.hostname}:${random.int}
     prefer-ip-address: true
 zuul:
-  sensitive-headers: Cookie,Set-Cookie,Authorization
+  sensitiveHeaders: Cookie,Set-Cookie
